@@ -136,7 +136,8 @@ document.onload = fetchApi();
 
 var walkScoreHeader = {
     headers: {
-        "Origin": "https://siyanguo.github.io"
+        "Origin": "https://siyanguo.github.io",
+        'Access-Control-Allow-Origin': '*'
     }
 }
 
