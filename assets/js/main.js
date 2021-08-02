@@ -134,15 +134,35 @@ $("#province-name").on("submit", getGeoCode);
 document.onload = fetchApi();
 
 
+// var walkScoreHeader = {
+//     headers: {
+//         // "Origin": "https://siyanguo.github.io",
+//         'Access-Control-Allow-Origin': '*',
+//         'Access-Control-Allow-Methods':'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+//     }
+// }
+
+// var fetchWalkScore = function () {
+//     var apiUrl = "https://api.walkscore.com/score?format=json&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76";
+//     fetch(apiUrl, walkScoreHeader)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (data) {
+//             console.log("walkscore", data);
+//         })
+// }
+
+// fetchWalkScore();
+
 var walkScoreHeader = {
     headers: {
         "Origin": "https://siyanguo.github.io",
         'Access-Control-Allow-Origin': '*'
     }
 }
-
 var fetchWalkScore = function () {
-    var apiUrl = "https://api.walkscore.com/score?format=json&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76";
+    var apiUrl = "https://cors-anywhere.herokuapp.com/https://api.walkscore.com/score?format=json&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76";
     fetch(apiUrl, walkScoreHeader)
         .then(function (response) {
             return response.json();
@@ -151,5 +171,4 @@ var fetchWalkScore = function () {
             console.log("walkscore", data);
         })
 }
-
 fetchWalkScore();
