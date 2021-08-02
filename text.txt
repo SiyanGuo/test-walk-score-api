@@ -1,0 +1,36 @@
+login: https://statcan.api.canada.ca/en/detail?api=statcan-all-indicators#!/default/all_indicators_eng 
+
+https://sso.api.canada.ca/auth/realms/gcapi/protocol/openid-connect/auth?client_id=gcapi-drupal&response_type=code&scope=openid%20email%20profile&redirect_uri=https%3A//api.canada.ca/openid-connect/keycloak&state=-WPYiX5OkPbNzOaG1n8ZVe0jVN4Vw08aPyqUSxfbAT0&preLoginUrl=https%3A//api.canada.ca/en/homepage&kc_locale=en 
+
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510018801 
+User-key: a48dba9596f7af379ff5df3c26ecc425
+
+
+
+------ API -------
+
+Data info: https://www.statcan.gc.ca/eng/developers/ind-all-json
+
+API URL Json: https://www150.statcan.gc.ca/n1/dai-quo/ssi/homepage/ind-all.json
+
+ 
+1. Crime Severity Index 
+registry_number:4751
+Data ref: 2020
+
+
+3. Average weekly earnings
+registry_number: 3555
+Data ref: April 2021
+
+
+1. Unemployment rate
+registry_number: 3587
+indicator_number: 1 -- Employment
+indicator_number: 2 -- Unemployment rate
+Data ref: June 2021
+
+
+2. Immigrants and ethnocultural diversity
+registry_number: 14428
+Data ref: the 2016 Census
