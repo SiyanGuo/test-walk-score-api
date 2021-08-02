@@ -162,7 +162,7 @@ var walkScoreHeader = {
     }
 }
 var fetchWalkScore = function () {
-    var apiUrl = "https://cors-anywhere.herokuapp.com/https://api.walkscore.com/score?format=json&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76";
+    var apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.walkscore.com/score?format=json&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76';
     fetch(apiUrl, walkScoreHeader)
         .then(function (response) {
             return response.json();
